@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
       return (
-            <div style={{ background: 'linear-gradient(168deg, #c9bdff, #fef5ff 97%)' }} className='h-[51rem] rounded-b-[70px] w-full flex justify-center items-center border'>
+            <div style={{ background: 'linear-gradient(168deg, #c9bdff, #fef5ff 97%)' }} className='h-[51rem] rounded-b-[70px] w-full flex justify-center items-center'>
                   <div className='flex justify-center px-[9rem] space-x-20'>
                         <Left />
                         <Right />
@@ -33,7 +33,7 @@ function Left() {
 
 function Right() {
       return (
-            <div className='flex space-x-4 overflow-hidden h-[46rem] mt-20 test'>
+            <div className='flex space-x-4 overflow-hidden h-[46rem] mt-20'>
                   <ScrollDown />
                   <ScrollUp />
             </div>

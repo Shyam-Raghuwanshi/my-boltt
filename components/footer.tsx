@@ -1,0 +1,44 @@
+import { HeartCrack } from 'lucide-react'
+import React from 'react'
+
+function Footer() {
+      return (
+            <div className='w-full bg-[#1b1b21] text-[#d7d7db] px-48 pt-20 pb-10 space-y-7 rounded-t-[60px]'>
+                  <div className='flex justify-between w-full'>
+                        <div> <img className='h-12' src={"./logo-white.png"} /></div>
+                        <div className='flex justify-between w-[73%]'>
+                              <div className='flex flex-col space-y-2'>
+                                    <span className='text-white text-xl font-bold'>Pages</span>
+                                    <span>All</span>
+                                    <span>Landing</span>
+                                    <span>Pricing</span>
+                                    <span>Legal</span>
+                              </div>
+                              <div className='flex flex-col space-y-2'>
+                                    <span className='text-white text-xl font-bold'>Sections</span>
+                                    <span>Hero</span>
+                                    <span>Features</span>
+                                    <span>Metrics</span>
+                                    <span>Testimonials</span>
+                                    <span>Pricing</span>
+                                    <span>Footer</span>
+                              </div>
+                              <div className='flex flex-col space-y-2'>
+                                    <span className='text-white text-xl font-bold'>Links</span>
+                                    <span>Affiliate Program</span>
+                                    <span>LinkedIn</span>
+                                    <span>X</span>
+                                    <span>Contact Us</span>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div className='flex justify-between items-center text-sm'>
+                        <span>Mady by <HeartCrack className='inline-block text-red-700' /> @shyam</span>
+                        <span className=''>© 2024 All Rights Reserved</span>
+                  </div>
+            </div>
+      )
+}
+
+export default Footer
