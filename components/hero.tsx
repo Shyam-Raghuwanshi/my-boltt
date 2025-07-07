@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react'
 import React from 'react'
 
 function Hero() {
@@ -11,19 +12,18 @@ function Hero() {
       )
 }
 
-
 function Left() {
       return (<>
             <div className='w-[50%] flex items-center'>
                   <div className='flex flex-col space-y-3'>
                         <Profiles />
                         <div>
-                              <h1 className='text-5xl font-extrabold uppercase'>Build websites 10x faster in framer with boltt</h1>
-                              <h2>Get access to 250+ sections, 300+ components and  20+ pages with weekly updates for a one-time payment of $29 $79</h2>
+                              <h1 className='text-[68px] tracking-tight leading-[1.1em] font-[900] uppercase'>Build websites 10x faster in framer with boltt</h1>
+                              <h2 className='pr-20 mt-3 text-[18px] text-[#434347]'>Get access to 250+ sections, 300+ components and  20+ pages with weekly updates for a one-time payment of $29 $79</h2>
                         </div>
-                        <div className='flex space-x-3 text-sm'>
-                              <button className='bg-purple-500 rounded-full px-4 py-1 text-white'>BUY NOW</button>
-                              <button className='rounded-full px-4 py-[5px] border border-black'>Explore library</button>
+                        <div className='flex space-x-3 text-sm mt-4'>
+                              <button className='bg-[#8048e0] rounded-full px-10 font-[650] py-3 text-white flex justify-evenly items-center'>BUY NOW</button>
+                              <button className='px-6 py-2 rounded-full border border-black flex justify-center items-center uppercase'>Explore library</button>
                         </div>
                   </div>
             </div>
@@ -114,7 +114,7 @@ function Profiles() {
                                     <img src={"./star.svg"} className='h-5' />
                                     <img src={"./star.svg"} className='h-5' />
                               </div>
-                              <span className='text-sm font-thin'>Loved by 100+ customers</span>
+                              <span className='text-sm text-[#434347]'>Loved by 100+ customers</span>
                         </div>
                   </div>
 
@@ -124,9 +124,12 @@ function Profiles() {
 
 function Profile({ classes }: { classes?: string }) {
       return (<>
-            <div className={`h-[42px] w-[42px] rounded-full flex justify-center items-center bg-white ${classes}`}>
-                  <img src="/shyam.JPG" alt="Profile" className="h-10 w-10 rounded-full" />
+            <div className={`h-[42px] w-[42px] flex rounded-full justify-center items-center bg-white ${classes}`}>
+                  <div className={`h-10 w-10 rounded-full overflow-hidden`}>
+                        <img src="/shyam.JPG" alt="Profile" className="w-full h-full object-cover" />
+                  </div>
             </div>
+
       </>)
 }
 

@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react'
 import React from 'react'
 
 function Navbar() {
@@ -9,8 +10,8 @@ function Navbar() {
           <span>Pricing</span>
           <span>Pages</span>
           <span>Sections</span>
-          <button className="px-4 py-1 rounded-2xl border border-black font-medium">Sign In</button>
-          <button className="bg-black rounded-2xl text-white px-4 py-1 font-medium">Buy now</button>
+          <button className="px-4 py-1 rounded-2xl border border-black font-medium text-[#434347]">Sign In</button>
+          <button className="bg-black rounded-3xl text-white px-4 py-[6px] font-medium flex space-x-2 items-center"><span>Buy now</span><ArrowRight className='h-4 w-4 text-white' /></button>
         </div>
       </div>
     </div>
