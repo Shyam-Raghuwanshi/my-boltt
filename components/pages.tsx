@@ -8,7 +8,7 @@ function Pages() {
                         <h2 className='text-center text-[#d5d5dc]'>Exhaustive choice of Home, Pricing, FAQ, About pages and more. Just add your content and your premium website is ready.</h2>
                         <button className='rounded-full px-8 py-3 bg-white text-black uppercase'>Explore all Pages</button>
                   </div>
-                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mt-10'>
                         <div className='w-[19rem] h-[34.5rem] rounded-xl overflow-hidden'>
                               <img src="p1.png" className='w-full h-full object-cover'></img>
                         </div>

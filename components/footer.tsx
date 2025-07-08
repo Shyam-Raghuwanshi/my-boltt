@@ -3,10 +3,10 @@ import React from 'react'
 
 function Footer() {
       return (
-            <div className='w-full bg-[#1b1b21] text-[#d7d7db] px-48 pt-20 pb-10 space-y-7 rounded-t-[60px]'>
-                  <div className='flex justify-between w-full'>
+            <div className='w-full bg-[#1b1b21] text-[#d7d7db] px-14 xl:px-48 pt-20 pb-10 space-y-7 rounded-t-[60px]'>
+                  <div className='flex justify-between w-full flex-col spyace-y-8 xl:flex-row xl:space-y-0'>
                         <div> <img className='h-12' src={"./logo-white.png"} /></div>
-                        <div className='flex justify-between w-[73%]'>
+                        <div className='flex justify-between w-[73%] flex-col spyace-y-8 xl:flex-row xl:space-y-0'>
                               <div className='flex flex-col space-y-2'>
                                     <span className='text-white text-xl font-bold'>Pages</span>
                                     <span>All</span>
@@ -33,7 +33,7 @@ function Footer() {
                         </div>
                   </div>
 
-                  <div className='flex justify-between items-center text-sm'>
+                  <div className='flex xl:justify-between xl:items-center text-sm flex-col xl:flex-row '>
                         <span>Mady by <HeartCrack className='inline-block text-red-700' /> @shyam</span>
                         <span className=''>© 2024 All Rights Reserved</span>
                   </div>

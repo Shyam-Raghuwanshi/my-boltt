@@ -12,13 +12,15 @@ const data = [
 
 function Questions() {
       return (
-            <div className='w-full flex justify-between py-36 px-56'>
-                  <div className='flex flex-col space-y-5 pr-14'>
-                        <span className='uppercase font-[950] text-4xl'>your questions answered</span>
-                        <span>If you have any other questions, please email us at contact@boltt.site</span>
-                  </div>
-                  <div>
-                        <QuestionList />
+            <div className='w-full flex justify-center items-center'>
+                  <div className='w-[90%] xl:w-auto flex flex-col xl:flex-row justify-between py-36'>
+                        <div className='flex flex-col space-y-5 pr-14'>
+                              <span className='uppercase font-[950] text-4xl'>your questions answered</span>
+                              <span>If you have any other questions, please email us at contact@boltt.site</span>
+                        </div>
+                        <div>
+                              <QuestionList />
+                        </div>
                   </div>
             </div>
       )
@@ -26,7 +28,7 @@ function Questions() {
 
 function QuestionList() {
       return (
-            <div className='flex flex-col space-y-5'>
+            <div className='flex flex-col space-y-5 mt-10 xl:mt-0'>
                   {data.map((item, index) => (
                         <Question key={index} question={item.question} answer={item.answer} />
                   ))}
@@ -36,7 +38,7 @@ function QuestionList() {
 
 function Question({ question, answer }: { question: string; answer: string }) {
       return (
-            <details className="w-[42rem] mx-auto  group bg-gray-50 border border-gray-200 rounded-lg p-5 shadow-sm">
+            <details className="w-full xl:w-[42rem] mx-auto  group bg-gray-50 border border-gray-200 rounded-lg p-5 shadow-sm">
                   <summary className="flex items-center justify-between cursor-pointer list-none">
                         <span className="font-medium text-gray-900">{question}</span>
                         <Plus className="text-xl transition-transform duration-300 group-open:rotate-45" />
