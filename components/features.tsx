@@ -52,7 +52,7 @@ function Features() {
       return (
             <div className='mt-32'>
                   <h1 className='uppercase text-center font-extrabold text-4xl'>What's included</h1>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-[75%] m-auto mt-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-[95%] sm:w-[75%] m-auto mt-10">
                         {data.map((item, index) => (
                               <Card
                                     key={index}

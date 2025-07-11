@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 .scroll-content-down {
-      display: flex;
-      flex-direction: column;
       animation: scrollUp 20s linear infinite;
 }
 
 .scroll-content-up {
-      display: flex;
-      flex-direction: column;
       animation: scrollDown 20s linear infinite;
+}
+
+.x-scroll-content-down {
+      animation: xscrollUp 10s linear infinite;
+}
+
+.x-scroll-content-up {
+      animation: xscrollDown 10s linear infinite;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -38,5 +42,25 @@
 
       100% {
             transform: translateY(-50%);
+      }
+}
+
+@keyframes xscrollDown {
+      0% {
+            transform: translateX(-50%);
+      }
+
+      100% {
+            transform: translateX(0%);
+      }
+}
+
+@keyframes xscrollUp {
+      0% {
+            transform: translateX(0);
+      }
+
+      100% {
+            transform: translateX(-50%);
       }
 }

@@ -3,9 +3,9 @@ import React from 'react'
 
 function Pricing() {
       return (
-            <div className='rounded-[60px] w-full pt-32 flex items-center flex-col text-white bg-[#1b1b21] pb-32'>
-                  <div className='flex flex-col items-center justify-center space-y-4 w-[50rem]'>
-                        <h1 className='uppercase text-[40px] tracking-tight leading-[1.1em] font-[800] text-center'>Get lifetime access to 1k+ components for less than <span className='text-[#bfa8e7]'>$0.03 per component</span> </h1>
+            <div className='lg:rounded-[60px] w-full pt-32 flex items-center flex-col text-white bg-[#1b1b21] pb-32'>
+                  <div className='flex flex-col items-start xl:items-center justify-center space-y-4 px-8 xl:px-0 xl:w-[50rem]'>
+                        <h1 className='uppercase text-[30px] xl:text-[40px] tracking-tight leading-[1.1em] font-[800] text-start xl:text-center'>Get lifetime access to 1k+ components for less than <span className='text-[#bfa8e7]'>$0.03 per component</span> </h1>
                         <h2 className='text-[#c8c8cf]'>Say goodbye to subscriptions. Pay once, use forever in unlimited projects. Free lifetime updates.</h2>
                   </div>
                   <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10 w-[95%] xl:w-[76%]'>

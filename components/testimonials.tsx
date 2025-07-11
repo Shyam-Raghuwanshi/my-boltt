@@ -23,8 +23,8 @@ const testimonials = [
 
 function Testimonials() {
       return (
-            <div className='rounded-[60px] w-full h-min pt-36 pb-16 flex justify-center items-center flex-col bg-[#eae6ff]'>
-                  <div className='flex flex-col items-center justify-center space-y-4 w-[40rem]'>
+            <div className='lg:rounded-[60px] w-full h-min pt-36 pb-16 flex justify-center items-center flex-col bg-[#eae6ff]'>
+                  <div className='flex flex-col items-center justify-center space-y-4 xl:w-[40rem]'>
                         <h1 className='uppercase font-extrabold text-3xl'>Our Testimonials</h1>
                   </div>
                   <TestimonialSlider />
